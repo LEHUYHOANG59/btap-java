@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diểm trung bình và tổng</title>
+</head>
+<body>
+
+<script>
+  function tinhtoan() {
+    let vatly=parseInt(document.getElementById("vatly").value);
+    console.log(vatly);
+    let hoahoc=parseInt(document.getElementById("hoahoc").value);
+    console.log(hoahoc);
+    let sinhhoc=parseInt(document.getElementById("sinhhoc").value);
+    console.log(sinhhoc);
+    document.getElementById("kqtb").innerHTML = "Điểm trung bình:"+(vatly+hoahoc+sinhhoc)/3;
+    document.getElementById("kqtong").innerHTML="Tổng:"+(vatly+hoahoc+sinhhoc);
+  }
+  // let vatly=parseInt(prompt("nhap diem vat ly:"));
+  // let hoahoc=parseInt(prompt("nhap diem hoa hoc:"));
+  // let sinhhoc=parseInt(prompt("nhap diem sinh hoc:"));
+  // alert("Diem trung binh "+(vatly+hoahoc+sinhhoc)/3);
+  // alert("Tong "+(vatly+hoahoc+sinhhoc));
+</script>
+<form action="">
+  <label>nhap diem vat ly:</label>
+  <input type="name" name="vatly" id="vatly"> <br> <br>
+  <label>nhap diem hoa hoc:</label>
+  <input type="hoa" name="hoahoc" id="hoahoc"> <br> <br>
+  <label>nhap diem sinh hoc:</label>
+
+  <input type="text" name="sinhhoc" id="sinhhoc"> <br> <br>
+  <button type="button" onclick="tinhtoan()">tinh toan</button>
+
+</form>
+<div id="kqtb">Điểm trung bình:</div>
+<div id="kqtong">Tổng</div>
+</body>
+</html>

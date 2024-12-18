@@ -1,0 +1,10 @@
+let inputcc;
+let inputcr;
+inputcc=prompt("nhap chieu rong");
+inputcr=prompt("nhap chieu cao");
+console.log(typeof inputcr);
+console.log(typeof inputcc);
+let cc=parseInt(inputcc);
+let cr=parseInt(inputcr);
+let dientichhcn=cc*cr;
+document.write("dien tich hinh chu nhat la "+dientichhcn);
